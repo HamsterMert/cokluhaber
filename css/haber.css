@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.texts {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.texts .maintext h2 {
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(#fff, #ddd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.texts .description h4 {
+    font-size: 18px;
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+.video-container {
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+    padding-top: 56.25%; /* 16:9 aspect ratio */
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 12px;
+}
+
+/* Yeni Buton Düzenlemesi */
+.video-container .btn {
+    position: absolute;
+    bottom: 15px; /* Butonun aşağıya yakın olması için */
+    left: 50%;
+    transform: translateX(-50%); /* Yatayda ortalama */
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border: 2px solid white;
+    border-radius: 30px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.video-container .btn:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+    transform: translateX(-50%) scale(1.1);
+}
+
+footer {
+    color: white;
+    margin-top: 30px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #fdbb2d;
+}
